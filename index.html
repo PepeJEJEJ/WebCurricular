@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles2.css">
+    <title>Currículo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1 id="h1">Jose Aranda Higueras</h1>
+            <p>Soy técnico en Sistemas Microinformáticos y Redes (SMR).</p>
+            <p>Me apasiona la creación de videojuegos.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d788.1640961886!2d-3.7860117275093113!3d37.798091797453125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7dec3dd20ad%3A0x4fad82fdbe189c8!2sMEDAC%20Aventura%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1728988396664!5m2!1ses!2ses" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:30 - 9:30</td>
+                        <td>Lenguajes de marcas</td>
+                        <td>Bases de Datos</td>
+                        <td>Sostenibilidad</td>
+                        <td>Entornos de desarrollo</td>
+                        <td>Programación</td>
+                    </tr>
+                    <tr>
+                        <td>9:30 - 10:30</td>
+                        <td>Lenguajes de marcas</td>
+                        <td>Bases de Datos</td>
+                        <td>Digitalización</td>
+                        <td>Entornos de desarrollo</td>
+                        <td>Programación</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 - 11:30</td>
+                        <td>Lenguajes de marcas</td>
+                        <td>Bases de Datos</td>
+                        <td>Programación</td>
+                        <td>Entornos de desarrollo</td>
+                        <td>Programación</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" align="center">Descanso</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 13:00</td>
+                        <td>Programación</td>
+                        <td>Sistemas informáticos</td>
+                        <td>Programación</td>
+                        <td>Bases de Datos</td>
+                        <td>Empleabilidad I</td>
+                    </tr>
+                    <tr>
+                        <td>13:00 - 14:00</td>
+                        <td>Programación</td>
+                        <td>Sistemas informáticos</td>
+                        <td>Sistemas informáticos</td>
+                        <td>Bases de Datos</td>
+                        <td>Empleabilidad I</td>
+                    </tr>
+                    <tr>
+                        <td>14:00 - 15:00</td>
+                        <td>Programación</td>
+                        <td>Sistemas informáticos</td>
+                        <td>Sistemas informáticos</td>
+                        <td>Bases de Datos</td>
+                        <td>Empleabilidad I</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="h3">Tu Información Personal</h2>
+            <form action="proceso.php" method="post">
+                <label for="nombre">¿Cómo te llamas?</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="apellidos">¿Cómo te apellidas?</label>
+                <input type="text" id="apellidos" name="apellidos" required><br><br>
+                <label for="edad">Tu edad:</label>
+                <input type="number" id="edad" name="edad" required><br><br>
+                <label>Tu Id:</label><br>
+                <input type="radio" id="hombre" name="sexo" value="h" required>
+                <label for="hombre">Hombre</label><br>
+                <input type="radio" id="mujer" name="sexo" value="m" required>
+                <label for="mujer">Mujer</label><br>
+                <input type="radio" id="Otro" name="sexo" value="d">
+                <label for="Otro">Otro</label><br>
+                <label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="codigo_postal">Código Postal:</label>
+                <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
+                <label for="direccion">Tu dirección:</label>
+                <input type="text" id="direccion" name="direccion" required><br><br>
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="ciudad" required>
+                    <option value="jaen" selected>Jaen</option>
+                    <option value="sevilla">Sevilla</option>
+                    <option value="granada">Granada</option>
+                    <option value="cordoba">Córdoba</option>
+                </select><br><br>
+                <label for="contrasena">Tu contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required><br><br>
+                <label for="estado_civil">Estado:</label>
+                <select id="estado_civil" name="estado_civil" required>
+                    <option value="casado">Casado</option>
+                    <option value="soltero">Soltero</option>
+                </select><br><br>
+                <label>Aficiones:</label><br>
+                <input type="checkbox" id="Fulvo" name="hobbies" value="Fulvo">
+                <label for="Fulvo">Futbol</label><br>
+                <input type="checkbox" id="Respirar" name="hobbies" value="Respirar">
+                <label for="Respirar">Baloncesto</label><br>
+                <input type="checkbox" id="Andar" name="hobbies" value="Vivir">
+                <label for="Andar">Andar</label><br>
+                <input type="checkbox" id="Leer" name="hobbies" value="Vivir">
+                <label for="Leer">Leer</label><br>
+                <label for="comentarios">Di algo:</label><br>
+                <textarea id="comentarios" name="comentarios" placeholder="Algo" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Mandar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
+        <div class="right-column">
+            <h2 id="h2">Información Personal</h2>
+            <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">
+              <img src="imagenes/pepe_93x93.jpeg" alt="Foto de Jose Aranda Higueras" class="photo">
+            </a>
+            <p>Nombre: Jose</p>
+            <p>Apellidos: Aranda Higueras</p>
+            <p>Email: jah0005@alu.medac.es</p>
+            <div>
+                <h2>Educación</h2>
+                <ol>
+                    <li>Ntra Sra del Rosario</li>
+                    <li>Instituto: La Pandera</li>
+                    <li>Sistemas Microinformáticos y Redes en Medac</li>
+                    <li>Actualmente estoy cursando 1º de Desarrollo de Aplicaciones Multiplataforma (DAM).</li>
+                </ol>
+            </div>
+            <div>
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Disfruto de leer</li>
+                    <li>Soy una persona hábil</li>
+                    <li>Tengo amplios conocimientos en historia</li>
+                </ul>
+            </div>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Español</li>
+                <li>Inglés</li>
+                <li>Francés</li>
+            </ul>
+            <div>
+                <h3>Menu de Navegacion</h3>
+                <li><a href="https://github.com/PepeJEJEJ/LLMM.git" target="_self">Mi principal GitHub</a></li>
+                <li><a href="https://github.com/p3p3rd/PEP.git" target="_blank">Mi otro GitHub</a></li>
+                <li><a href="https://instituto.medac.es/" target="_blank">MEDAC Instituto Virtual</a></li>
+                <li><a href="#h1">Ir al principio</a></li>
+                <li><a href="#h2">Ir a la info personal</a></li>
+                <li><a href="#h3">Ir a tu Información</a></li>
+                <li><a href="#h4">Ir a Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
